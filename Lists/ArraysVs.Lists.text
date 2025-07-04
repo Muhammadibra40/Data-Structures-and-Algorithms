@@ -1,0 +1,10 @@
+-- simlarities
+1. Both are mutable.
+2. Iterable and indexed.
+3. can be sliced.
+
+
+Differences
+
+1. Arrays are better and more optimzed for arithmatic operations.
+2. Arrays only accepts the same data types but list accepts different data types.
