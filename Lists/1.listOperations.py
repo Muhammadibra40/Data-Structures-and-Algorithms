@@ -1,6 +1,27 @@
 # Lists can have different types of elements.
 # Lists can have nested lists
 
+
+fruit_list1 = ['Apple', 'Berry', 'Cherry', 'Papaya']
+fruit_list2 = fruit_list1             # Reference copy (points to same list)
+fruit_list3 = fruit_list1[:]          # Shallow copy (independent list)
+
+# O/P
+# fruit_list1 = ['Apple', 'Berry', 'Cherry', 'Papaya']
+# fruit_list2 = ['Apple', 'Berry', 'Cherry', 'Papaya']   # same as fruit_list1
+# fruit_list3 = ['Apple', 'Berry', 'Cherry', 'Papaya']   # separate copy
+
+fruit_list2[0] = 'Guava'   # modifies fruit_list1 as well, since fruit_list2 is just a reference
+fruit_list3[1] = 'Kiwi'    # modifies only fruit_list3
+
+
+# O/P
+# fruit_list1 = ['Guava', 'Berry', 'Cherry', 'Papaya']
+# fruit_list2 = ['Guava', 'Berry', 'Cherry', 'Papaya']   # same as fruit_list1
+# fruit_list3 = ['Apple', 'Kiwi', 'Cherry', 'Papaya']
+
+
+
 list1 = ["Milk", "coffee", "banana"]
 
 list1[:2] = ["Jam", "oil"]
